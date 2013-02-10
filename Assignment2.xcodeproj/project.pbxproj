@@ -10,6 +10,7 @@
 		C12D4EF016C5963700A20162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12D4EEF16C5963700A20162 /* Foundation.framework */; };
 		C12D4EF316C5963700A20162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C12D4EF216C5963700A20162 /* main.m */; };
 		C12D4EF716C5963700A20162 /* Assignment2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C12D4EF616C5963700A20162 /* Assignment2.1 */; };
+		C12D4EFF16C5964E00A20162 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C12D4EFE16C5964E00A20162 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C12D4EF216C5963700A20162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C12D4EF516C5963700A20162 /* Assignment2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment2-Prefix.pch"; sourceTree = "<group>"; };
 		C12D4EF616C5963700A20162 /* Assignment2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment2.1; sourceTree = "<group>"; };
+		C12D4EFD16C5964E00A20162 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C12D4EFE16C5964E00A20162 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 		C12D4EE316C5963700A20162 = {
 			isa = PBXGroup;
 			children = (
+				C12D4EFD16C5964E00A20162 /* Person.h */,
+				C12D4EFE16C5964E00A20162 /* Person.m */,
 				C12D4EF116C5963700A20162 /* Assignment2 */,
 				C12D4EEE16C5963700A20162 /* Frameworks */,
 				C12D4EED16C5963700A20162 /* Products */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12D4EF316C5963700A20162 /* main.m in Sources */,
+				C12D4EFF16C5964E00A20162 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
