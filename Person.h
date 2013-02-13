@@ -10,7 +10,7 @@
 
 @interface Person : NSObject
 
-@property (nonatomic,retain) NSString*firstName;
-@property (nonatomic,retain) NSString*lastName;
-@property (nonatomic,retain) NSString*telNum;
+@property (nonatomic,retain) NSString* _firstName;
+@property (nonatomic,retain) NSString* _lastName;
+@property (nonatomic,retain) NSString* _telNum;
 @end

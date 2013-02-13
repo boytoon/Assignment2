@@ -10,8 +10,8 @@
 
 @implementation Person
 
-@synthesize firstName;
-@synthesize lastName;
-@synthesize telNum;
+@synthesize _firstName;
+@synthesize _lastName;
+@synthesize _telNum;
 
 @end

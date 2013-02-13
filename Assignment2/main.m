@@ -56,29 +56,29 @@ int main(void)
          
         }*/
 
-        person.firstName = @"John";
-        person.lastName = @"Smith";
-        person.telNum = @"92831";
-        [info_name addObject:person.firstName];
-        [info_lname addObject:person.lastName];
-        [info_pnum addObject: person.telNum];
-        dictInfo = [NSDictionary dictionaryWithObjectsAndKeys:person.firstName,fname,person.lastName,lname,person.telNum,pnum, nil];
+        person._firstName = @"John";
+        person._lastName = @"Smith";
+        person._telNum = @"92831";
+        [info_name addObject:person._firstName];
+        [info_lname addObject:person._lastName];
+        [info_pnum addObject: person._telNum];
+        dictInfo = [NSDictionary dictionaryWithObjectsAndKeys:person._firstName,fname,person._lastName,lname,person._telNum,pnum, nil];
         [info addObject:dictInfo];
-        person.firstName = @"Ken";
-        person.lastName = @"Postman";
-        person.telNum = @"84130";
-        [info_name addObject:person.firstName];
-        [info_lname addObject:person.lastName];
-        [info_pnum addObject: person.telNum];
-        dictInfo = [NSDictionary dictionaryWithObjectsAndKeys:person.firstName,fname,person.lastName,lname,person.telNum,pnum, nil];
+        person._firstName = @"Ken";
+        person._lastName = @"Postman";
+        person._telNum = @"84130";
+        [info_name addObject:person._firstName];
+        [info_lname addObject:person._lastName];
+        [info_pnum addObject: person._telNum];
+        dictInfo = [NSDictionary dictionaryWithObjectsAndKeys:person._firstName,fname,person._lastName,lname,person._telNum,pnum, nil];
         [info addObject:dictInfo];
-        person.firstName = @"Keith";
-        person.lastName = @"Benja";
-        person.telNum = @"65743";
-        [info_name addObject:person.firstName];
-        [info_lname addObject:person.lastName];
-        [info_pnum addObject: person.telNum];
-        dictInfo = [NSDictionary dictionaryWithObjectsAndKeys:person.firstName,fname,person.lastName,lname,person.telNum,pnum, nil];
+        person._firstName = @"Keith";
+        person._lastName = @"Benja";
+        person._telNum = @"65743";
+        [info_name addObject:person._firstName];
+        [info_lname addObject:person._lastName];
+        [info_pnum addObject: person._telNum];
+        dictInfo = [NSDictionary dictionaryWithObjectsAndKeys:person._firstName,fname,person._lastName,lname,person._telNum,pnum, nil];
         [info addObject:dictInfo];
 
         for (id obj in info)
@@ -86,7 +86,7 @@ int main(void)
             NSLog(@"%@", obj);
         }
 
-        NSSortDescriptor* firstnameDisc = [[NSSortDescriptor alloc]initWithKey:fname ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+        NSSortDescriptor* firstnameDisc = [[NSSortDescriptor alloc]initWithKey:fname ascending:YES];
         NSArray *discriptors = [NSArray arrayWithObjects:firstnameDisc, nil];
         sortedArray = [info sortedArrayUsingDescriptors:discriptors];
         
@@ -99,7 +99,7 @@ int main(void)
         NSLog(@"array: %@", sortedArray);            //alternative to print out the array
         
         NSLog(@"sort by lastname");
-        NSSortDescriptor* lastnameDisc = [[NSSortDescriptor alloc]initWithKey:lname ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+        NSSortDescriptor* lastnameDisc = [[NSSortDescriptor alloc]initWithKey:lname ascending:YES];
         discriptors = [NSArray arrayWithObjects:lastnameDisc, nil];
         sortedArray = [info sortedArrayUsingDescriptors:discriptors];
         
@@ -109,7 +109,7 @@ int main(void)
         }
         
         NSLog(@"sort by phone number");
-        NSSortDescriptor* pnumDisc = [[NSSortDescriptor alloc]initWithKey:pnum ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)];
+        NSSortDescriptor* pnumDisc = [[NSSortDescriptor alloc]initWithKey:pnum ascending:YES];
         discriptors = [NSArray arrayWithObjects:pnumDisc, nil];
         sortedArray = [info sortedArrayUsingDescriptors:discriptors];
         
